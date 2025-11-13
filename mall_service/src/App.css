@@ -1,0 +1,77 @@
+.App {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #eef2f6, #dce3eb);
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #333;
+}
+
+/* Title Section */
+.App h1 {
+  color: #1e3c72;
+  font-size: 2.5rem;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(30, 60, 114, 0.15);
+}
+
+/* Divider Line */
+.divider {
+  width: 80px;
+  height: 4px;
+  background-color: #1e3c72;
+  margin: 0 auto 40px;
+  border-radius: 3px;
+}
+
+/* Layout Wrapper */
+.mall-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Card/Section Wrapper */
+.section {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  width: 100%;
+  max-width: 1200px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Footer Style */
+.footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.footer span {
+  color: #1e3c72;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .App h1 {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 18px;
+  }
+
+  .mall-container {
+    gap: 20px;
+  }
+}

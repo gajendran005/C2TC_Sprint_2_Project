@@ -1,0 +1,69 @@
+/* MallForm.css */
+
+.form-container {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 520px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form-container h2 {
+  color: #1e293b; /* dark navy text */
+  margin-bottom: 18px;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.input-field {
+  width: 90%;
+  max-width: 420px;
+  padding: 10px 12px;
+  border: 1px solid #cdd0d4;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  background-color: #fafafa;
+}
+
+.input-field:focus {
+  border-color: #16a34a; /* green accent for malls */
+  box-shadow: 0 0 6px rgba(22, 163, 74, 0.3);
+  outline: none;
+  background-color: #ffffff;
+}
+
+button.input-field {
+  background: #16a34a; /* primary green button */
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+  width: 100%;
+  max-width: 420px;
+}
+
+button.input-field:hover {
+  background: #12833c;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+}

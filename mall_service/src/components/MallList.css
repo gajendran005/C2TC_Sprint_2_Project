@@ -1,0 +1,117 @@
+/* MallList.css */
+
+.mall-list-container {
+  margin: 30px auto;
+  max-width: 1100px;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mall-list-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2b2b2b;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.no-data {
+  text-align: center;
+  color: #777;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.mall-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+.mall-card {
+  background: #f9fbff;
+  border-radius: 12px;
+  padding: 18px;
+  text-align: left;
+  border: 1px solid #e0e6f0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mall-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.mall-details h3 {
+  color: #2d3a64;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.mall-details p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.mall-details span {
+  font-weight: 600;
+  color: #333;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.edit-btn {
+  background-color: #4a6cf7;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #3759e4;
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  background-color: #f7584a;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #e33c2e;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .mall-card {
+    padding: 14px;
+  }
+
+  .mall-details p {
+    font-size: 0.9rem;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+}
